@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo list(without localStorage)</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .todo {
+            max-width: 1200px;
+            height: 100vh;
+            position: relative;
+
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-120px, -50%);
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <section class="todo">
+
+        <div class="container">
+
+            <div class="custom-box  mt-4 ml-4">
+                <div class="card-columns">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1554570139-827896e78c98?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjEwODM3MX0" class="card-img-top" alt="...">
+                        <div class="card-body  p-0 m-0 text-center">
+                            <h5 class="card-title bg-danger text-light p-4 text-center mb-2">ToDo list</h5>
+
+                            <h2 class="title mb-3">Add Items</h2>
+                            
+                            <form id="addForm" class="form-inline px-4 mb-3 text-center">
+                                <input type="text" placeholder="add item.." class="form-control mr-2" id="item">
+                                <input type="submit" class="btn btn-dark" value="Add">
+                            </form>
+                            <h2 class="title mb-2">Items</h2>
+                            <ul id="items" class="list-group">
+<!--                                <li class="list-group-item">This is one item <button class="btn btn-danger btn-sm float-right delete">delete</button></li>-->
+                                
+                            </ul>
+
+                        </div>
+                        <div class="card-footer p-4 bg-dark">
+                            <input type="text" class="form-control" id="search" placeholder="Search Items..">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
